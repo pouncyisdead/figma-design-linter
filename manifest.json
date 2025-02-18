@@ -1,0 +1,21 @@
+{
+  "api": "1.0.0",
+  "editorType": [
+    "figma"
+  ],
+  "id": "figma-design-linter",
+  "name": "Design Linter",
+  "main": "build/main.js",
+  "ui": "build/ui.js",
+  "parameters": [
+    {
+      "name": "Lint Design"
+    }
+  ],
+  "capabilities": [],
+  "networkAccess": {
+    "allowedDomains": [
+      "none"
+    ]
+  }
+}

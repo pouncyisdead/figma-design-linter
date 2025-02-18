@@ -1,0 +1,43 @@
+{
+  "name": "figma-design-linter",
+  "private": true,
+  "version": "0.0.0-mvp",
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "dev": "build-figma-plugin --watch",
+    "build": "build-figma-plugin --minify",
+    "watch": "build-figma-plugin --watch"
+  },
+  "dependencies": {
+    "@create-figma-plugin/ui": "^3.2.0",
+    "@create-figma-plugin/utilities": "^3.2.0",
+    "preact": "^10.24.2"
+  },
+  "devDependencies": {
+    "@create-figma-plugin/build": "^3.2.0",
+    "@create-figma-plugin/tsconfig": "^3.2.0",
+    "@figma/plugin-typings": "1.100.2",
+    "@types/node": "^20.11.16",
+    "typescript": "~5.3.3",
+    "vite": "^5.0.12"
+  },
+  "figma-plugin": {
+    "id": "figma-design-linter",
+    "name": "Design Linter",
+    "main": "src/main.ts",
+    "ui": "src/ui.tsx",
+    "capabilities": [],
+    "networkAccess": {
+      "allowedDomains": ["none"]
+    },
+    "parameters": [
+      {
+        "name": "Lint Design",
+        "command": "lint"
+      }
+    ]
+  }
+}
